@@ -32,21 +32,19 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: AKUN1
-  server: quiz.staging.vidio.com
-  port: 443
-  type: vmess
-  uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sg-ctb.aixxycode.id
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sg-ctb.aixxycode.id
+  - name: AKUN1
+    server: 104.22.5.240
+    port: 443
+    type: trojan
+    password: sGWbw5q2nBtPeZ4ziM8J_Q
+    skip-cert-verify: true
+    sni: ikada.aixxycode.id
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: ikada.aixxycode.id
+    udp: truexxycode.id
   udp: true
 proxy-groups:
   - name: ID-X
