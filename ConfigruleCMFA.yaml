@@ -32,45 +32,30 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: AKUN1
-    server: 104.16.17.120
-    port: 443
-    type: trojan
-    password: sGWbw5q2nBtPeZ4ziM8J_Q
-    skip-cert-verify: true
-    sni: ikada.aixxycode.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: ikada.aixxycode.id
-    udp: true
-    - name: AKUN2
-    server: 172.67.5.14
-    port: 443
-    type: trojan
-    password: sGWbw5q2nBtPeZ4ziM8J_Q
-    skip-cert-verify: true
-    sni: ikada.aixxycode.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: ikada.aixxycode.id
-    udp: true
-    - name: AKUN3
-    server: 162.159.128.7
-    port: 443
-    type: trojan
-    password: sGWbw5q2nBtPeZ4ziM8J_Q
-    skip-cert-verify: true
-    sni: ikada.aixxycode.id
-    network: ws
-    ws-opts:
-      path: /trojan
-      headers:
-        Host: ikada.aixxycode.id
-    udp: true
+- name: AKUN1
+  server: 104.16.17.120
+  port: 443
+  type: trojan
+  password: 46e8ff73-041c-4533-b8de-f1acbed25012
+  skip-cert-verify: true
+  sni: id2.servercepat.net
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: id2.servercepat.net
+  udp: true
+- name: AKUN2
+  server: 104.22.5.240
+  port: 443
+  type: trojan
+  password: 46e8ff73-041c-4533-b8de-f1acbed25012
+  skip-cert-verify: true
+  sni: static-web.prod.vidiocdn.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
+  udp: true
   
 proxy-groups:
   - name: ID-X
@@ -80,7 +65,6 @@ proxy-groups:
     proxies:
       - AKUN1
       - AKUN2
-      - AKUN3
 
   - name: MIX-X
     type: fallback
@@ -89,7 +73,6 @@ proxy-groups:
     proxies:
       - AKUN1
       - AKUN2
-      - AKUN3
       
   - name: IKLAN
     type: select
