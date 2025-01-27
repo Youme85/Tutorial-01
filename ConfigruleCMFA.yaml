@@ -32,24 +32,25 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
+
 - name: AKUN1
-  server: 104.16.17.120
+  server: quiz.staging.vidio.com
   port: 443
   type: trojan
-  password: 46e8ff73-041c-4533-b8de-f1acbed25012
+  password: d6cd65a4-0f6b-4aa7-9ba4-4847a3100438
   skip-cert-verify: true
-  sni: id2.servercepat.net
+  sni: id1.servercepat.net
   network: ws
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: id2.servercepat.net
+      Host: id1.servercepat.net
   udp: true
 - name: AKUN2
-  server: 104.22.5.240
+  server: id1.servercepat.net
   port: 443
   type: trojan
-  password: 46e8ff73-041c-4533-b8de-f1acbed25012
+  password: d6cd65a4-0f6b-4aa7-9ba4-4847a3100438
   skip-cert-verify: true
   sni: static-web.prod.vidiocdn.com
   network: grpc
