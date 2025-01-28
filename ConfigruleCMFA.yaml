@@ -34,10 +34,10 @@ dns:
 proxies:
 
 - name: AKUN1
-  server: quiz.staging.vidio.com
+  server: 104.22.5.240
   port: 443
   type: trojan
-  password: d6cd65a4-0f6b-4aa7-9ba4-4847a3100438
+  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
   skip-cert-verify: true
   sni: id1.servercepat.net
   network: ws
@@ -47,15 +47,30 @@ proxies:
       Host: id1.servercepat.net
   udp: true
 - name: AKUN2
-  server: id1.servercepat.net
+  server: 172.67.5.14
   port: 443
   type: trojan
-  password: d6cd65a4-0f6b-4aa7-9ba4-4847a3100438
+  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
   skip-cert-verify: true
-  sni: static-web.prod.vidiocdn.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
+  sni: id1.servercepat.net
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: id1.servercepat.net
+  udp: true
+- name: AKUN3
+  server: 104.16.17.120
+  port: 443
+  type: trojan
+  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
+  skip-cert-verify: true
+  sni: id1.servercepat.net
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: id1.servercepat.net
   udp: true
   
 proxy-groups:
@@ -66,7 +81,8 @@ proxy-groups:
     proxies:
       - AKUN1
       - AKUN2
-
+      - AKUN3
+      
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -74,6 +90,7 @@ proxy-groups:
     proxies:
       - AKUN1
       - AKUN2
+      - AKUN3
       
   - name: IKLAN
     type: select
