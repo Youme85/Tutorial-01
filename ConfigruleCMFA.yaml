@@ -32,12 +32,11 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-
 - name: AKUN1
-  server: 104.22.5.240
+  server: 104.22.4.240
   port: 443
   type: trojan
-  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
+  password: a2adf2d1-4878-4000-9b72-d1e6995d66ca
   skip-cert-verify: true
   sni: id1.servercepat.net
   network: ws
@@ -47,23 +46,21 @@ proxies:
       Host: id1.servercepat.net
   udp: true
 - name: AKUN2
-  server: 172.67.5.14
+  server: id1.servercepat.net
   port: 443
   type: trojan
-  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
+  password: a2adf2d1-4878-4000-9b72-d1e6995d66ca
   skip-cert-verify: true
-  sni: id1.servercepat.net
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: id1.servercepat.net
+  sni: sb.scorecardresearch.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trojan-grpc
   udp: true
 - name: AKUN3
-  server: 104.16.17.120
+  server: 104.22.5.240
   port: 443
   type: trojan
-  password: 7e2e6679-c48f-4415-9031-abdb4665eefe
+  password: a2adf2d1-4878-4000-9b72-d1e6995d66ca
   skip-cert-verify: true
   sni: id1.servercepat.net
   network: ws
