@@ -10,7 +10,7 @@ proxies:
   cipher: auto
   tls: null
   skip-cert-verify: true
-  servername: sg-ctb.aixxycode.id
+  servername: null
   network: ws
   ws-opts: 
     path: /sshkit/sanhy/63169147da381/
@@ -26,7 +26,7 @@ proxies:
   cipher: auto
   tls: null
   skip-cert-verify: true
-  servername: sg-ctb.aixxycode.id
+  servername: null
   network: ws
   ws-opts: 
     path: /sshkit/sanhy/63169147da381/
@@ -35,7 +35,7 @@ proxies:
 
 - name: STREAM
   type: vmess
-  server: 104.22.5.240
+  server: 104.22.4.240
   port: 443
   uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
   alterId: 0
@@ -58,7 +58,7 @@ proxies:
   cipher: auto
   tls: null
   skip-cert-verify: true
-  servername: sg-ctb.aixxycode.id
+  servername: null
   network: ws
   ws-opts: 
     path: /sshkit/sanhy/63169147da381/
