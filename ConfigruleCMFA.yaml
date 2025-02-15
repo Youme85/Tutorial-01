@@ -3,7 +3,7 @@ proxies:
 
 - name: GAME 
   type: vmess
-  server: 104.22.5.240
+  server: 172.67.5.14
   port: 80
   uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
   alterId: 0
@@ -19,7 +19,7 @@ proxies:
 
 - name: SOSMED 
   type: vmess
-  server: 104.22.4.240
+  server: 172.67.5.14
   port: 80
   uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
   alterId: 0
@@ -35,7 +35,7 @@ proxies:
 
 - name: STREAM
   type: vmess
-  server: 104.16.17.120
+  server: 104.22.5.240
   port: 443
   uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
   alterId: 0
