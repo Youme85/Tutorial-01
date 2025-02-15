@@ -1,60 +1,60 @@
 ---
 proxies:
-  - name: GAME
-    server: 104.22.5.240
-    port: 443
-    type: trojan
-    password: Rachman85
-    skip-cert-verify: true
-    sni: id-biznet001.beritanect.click
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-biznet001.beritanect.click
-    udp: true
+- name: GAME
+  server: 104.22.5.240
+  port: 443
+  type: trojan
+  password: Rachman85
+  skip-cert-verify: true
+  sni: id-biznet001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /trojan-go
+    headers:
+      Host: id-biznet001.beritanect.click
+  udp: true
 
-  - name: SOSMED
-    server: 104.22.4.240
-    port: 443
-    type: trojan
-    password: Rachman85
-    skip-cert-verify: true
-    sni: id-biznet001.beritanect.click
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-biznet001.beritanect.click
-    udp: true
+- name: SOSMED
+  server: 104.22.4.240
+  port: 443
+  type: trojan
+  password: Rachman85
+  skip-cert-verify: true
+  sni: id-biznet001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /trojan-go
+    headers:
+      Host: id-biznet001.beritanect.click
+  udp: true
   
-  - name: STREAM 
-    server: 172.67.5.14 
-    port: 443
-    type: trojan
-    password: Rachman85
-    skip-cert-verify: true
-    sni: id-biznet001.beritanect.click
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-biznet001.beritanect.click
-    udp: true
+- name: STREAM
+  server: quiz.staging.vidio.com
+  port: 443
+  type: trojan
+  password: Rachman85
+  skip-cert-verify: true
+  sni: id-biznet001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /trojan-go
+    headers:
+      Host: id-biznet001.beritanect.click
+  udp: true
     
-  - name: BROWSER 
-    server: quiz.staging.vidio.com 
-    port: 443
-    type: trojan
-    password: Rachman85
-    skip-cert-verify: true
-    sni: id-biznet001.beritanect.click
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: id-biznet001.beritanect.click
-    udp: true
+- name: BROWSER 
+  server: 172.67.5.14
+  port: 443
+  type: trojan
+  password: Rachman85
+  skip-cert-verify: true
+  sni: id-biznet001.beritanect.click
+  network: ws
+  ws-opts:
+    path: /trojan-go
+    headers:
+      Host: id-biznet001.beritanect.click
+  udp: true
     
 proxy-groups:
 - name: Game
