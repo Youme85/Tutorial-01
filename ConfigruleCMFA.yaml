@@ -1,71 +1,61 @@
 ---
 proxies:
+  - name: GAME
+    server: 104.22.5.240
+    port: 443
+    type: trojan
+    password: Rachman85
+    skip-cert-verify: true
+    sni: id-biznet001.beritanect.click
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-biznet001.beritanect.click
+    udp: true
 
-- name: GAME 
-  type: vmess
-  server: 172.67.5.14
-  port: 80
-  uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
-  alterId: 0
-  cipher: auto
-  tls: null
-  skip-cert-verify: true
-  servername: null
-  network: ws
-  ws-opts: 
-    path: /sshkit/sanhy/63169147da381/
-    headers: 
-      Host: sg-ctb.aixxycode.id
-
-- name: SOSMED 
-  type: vmess
-  server: 172.67.5.14
-  port: 80
-  uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
-  alterId: 0
-  cipher: auto
-  tls: null
-  skip-cert-verify: true
-  servername: null
-  network: ws
-  ws-opts: 
-    path: /sshkit/sanhy/63169147da381/
-    headers: 
-      Host: sg-ctb.aixxycode.id
-
-- name: STREAM
-  type: vmess
-  server: 104.22.4.240
-  port: 443
-  uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sg-ctb.aixxycode.id
-  network: ws
-  ws-opts: 
-    path: /sshkit/sanhy/63169147da381/
-    headers: 
-      Host: sg-ctb.aixxycode.id
+  - name: SOSMED
+    server: 104.22.4.240
+    port: 443
+    type: trojan
+    password: Rachman85
+    skip-cert-verify: true
+    sni: id-biznet001.beritanect.click
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-biznet001.beritanect.click
+    udp: true
   
-- name: BROWSER
-  type: vmess
-  server: 172.67.5.14
-  port: 80
-  uuid: 0eecaee8-98fd-473f-be72-5b1661718aa2
-  alterId: 0
-  cipher: auto
-  tls: null
-  skip-cert-verify: true
-  servername: null
-  network: ws
-  ws-opts: 
-    path: /sshkit/sanhy/63169147da381/
-    headers: 
-      Host: sg-ctb.aixxycode.id
-
-
+  - name: STREAM 
+    server: 172.67.5.14 
+    port: 443
+    type: trojan
+    password: Rachman85
+    skip-cert-verify: true
+    sni: id-biznet001.beritanect.click
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-biznet001.beritanect.click
+    udp: true
+    
+  - name: BROWSER 
+    server: quiz.staging.vidio.com 
+    port: 443
+    type: trojan
+    password: Rachman85
+    skip-cert-verify: true
+    sni: id-biznet001.beritanect.click
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: id-biznet001.beritanect.click
+    udp: true
+    
 proxy-groups:
 - name: Game
   type: url-test
@@ -135,7 +125,7 @@ dns:
   - https://1.1.1.1/dns-query
   - tls://8.8.8.8:853
   fallback-filter:
-    geoip: true
+    geoip: false
     ipcidr:
     - 0.0.0.0/8
     - 10.0.0.0/8
@@ -335,47 +325,6 @@ rules:
 - DOMAIN-KEYWORD,*.garena.com,Game
 - DOMAIN-KEYWORD,*.lytogame.com,Game
 - DOMAIN-KEYWORD,lytogame.com,Game
-- DOMAIN-SUFFIX,mobile.legends,Game
-- DOMAIN-SUFFIX,mobile-legends.net,Game
-- DOMAIN-SUFFIX,sl-reverse.com,Game
-- DOMAIN-SUFFIX,akamaitechnologies.com,Game
-- DOMAIN-SUFFIX,youngjoygame.com,Game
-- DOMAIN-SUFFIX,yuanzhapp.com,Game
-- DOMAIN-SUFFIX,aihelp.net,Game
-- DOMAIN-SUFFIX,adjust.net.in,Game
-- DST-PORT,30190,Game
-- DST-PORT,30220,Game
-- DST-PORT,30021,Game
-- DST-PORT,10003,Game
-#scanjanuari 
-- IP-CIDR,200.25.11.1/16,Game 
-- IP-CIDR,103.16.137.22/16 ,Game 
-- IP-CIDR,128.14.140.38/16 ,Game 
-- IP-CIDR,159.122.113.146/16 ,Game 
-- IP-CIDR,117.103.116.26/24 ,Game 
-- IP-CIDR,163.171.220.15/24 ,Game 
-- IP-CIDR,114.125.115.16/24 ,Game 
-- IP-CIDR,58.26.7.254/24 ,Game 
-- IP-CIDR,31.13.95.1/24 ,Game 
-- IP-CIDR,185.151.204.31/24 ,Game 
-- IP-CIDR,103.138.247.78/24 ,Game 
-- IP-CIDR,169.46.198.115/16 ,Game 
-- IP-CIDR,169.44.1.1/16 ,Game 
-- IP-CIDR,45.43.33.78/16 ,Game 
-- IP-CIDR,148.153.34.190/16 ,Game 
-- IP-CIDR,74.125.70.120/24 ,Game 
-- IP-CIDR,107.155.14.146/16 ,Game 
-- IP-CIDR,122.10.139.106/16 ,Game 
-- IP-CIDR,128.14.140.38/16 ,Game 
-- IP-CIDR,59.153.158.40/16 ,Game 
-- IP-CIDR,94.97.239.35/16 ,Game 
-- IP-CIDR,200.55.245.166/16 ,Game 
-- IP-CIDR,182.93.78.14/16 ,Game 
-- IP-CIDR,142.250.4.154/24 ,Game 
-- IP-CIDR,23.236.118.218/16 ,Game 
-- IP-CIDR,23.248.168.168/16 ,Game 
-- IP-CIDR,169.45.173.38/24 ,Game 
-- IP-CIDR,202.131.87.90/16,Game 
 # SOSMED
 - DOMAIN-KEYWORD,*.facebook.com,Sosmed
 - DOMAIN-KEYWORD,*.facebook.net,Sosmed
