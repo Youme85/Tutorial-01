@@ -4,56 +4,56 @@ proxies:
   server: 104.22.5.240
   port: 443
   type: trojan
-  password: Rachman85
+  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
   skip-cert-verify: true
-  sni: id-biznet001.beritanect.click
+  sni: id4.servercepat.net
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-biznet001.beritanect.click
+      Host: id4.servercepat.net
   udp: true
 
 - name: SOSMED
   server: 104.22.4.240
   port: 443
   type: trojan
-  password: Rachman85
+  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
   skip-cert-verify: true
-  sni: id-biznet001.beritanect.click
+  sni: id4.servercepat.net
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-biznet001.beritanect.click
+      Host: id4.servercepat.net
   udp: true
   
 - name: STREAM
   server: quiz.staging.vidio.com
   port: 443
   type: trojan
-  password: Rachman85
+  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
   skip-cert-verify: true
-  sni: id-biznet001.beritanect.click
+  sni: id4.servercepat.net
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-biznet001.beritanect.click
+      Host: id4.servercepat.net
   udp: true
     
 - name: BROWSER 
   server: 172.67.5.14
   port: 443
   type: trojan
-  password: Rachman85
+  password: id4.servercepat.net
   skip-cert-verify: true
-  sni: id-biznet001.beritanect.click
+  sni: id4.servercepat.net
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-biznet001.beritanect.click
+      Host: id4.servercepat.net
   udp: true
     
 proxy-groups:
