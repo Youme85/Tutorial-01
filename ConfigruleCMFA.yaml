@@ -4,46 +4,46 @@ proxies:
   server: 104.22.5.240
   port: 443
   type: trojan
-  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
+  password: 47b60744-03dd-4870-aca3-ade5f15efb01
   skip-cert-verify: true
-  sni: id4.servercepat.net
+  sni: id-warna.rmatstore.biz.id
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id4.servercepat.net
+      Host: id-warna.rmatstore.biz.id
   udp: true
 
 - name: SOSMED
   server: 104.22.4.240
   port: 443
   type: trojan
-  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
+  password: 47b60744-03dd-4870-aca3-ade5f15efb01
   skip-cert-verify: true
-  sni: id4.servercepat.net
+  sni: id-warna.rmatstore.biz.id
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id4.servercepat.net
+      Host: id-warna.rmatstore.biz.id
   udp: true
   
 - name: STREAM
   server: quiz.staging.vidio.com
   port: 443
   type: trojan
-  password: f8fbce72-9008-4e8d-b14b-b7ab8dae5eeb
+  password: 47b60744-03dd-4870-aca3-ade5f15efb01
   skip-cert-verify: true
-  sni: id4.servercepat.net
+  sni: id-warna.rmatstore.biz.id
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id4.servercepat.net
+      Host: id-warna.rmatstore.biz.id
   udp: true
     
 - name: BROWSER 
-  server: 172.67.5.14
+  server: quiz.int.vidio.com
   port: 443
   type: trojan
   password: id4.servercepat.net
