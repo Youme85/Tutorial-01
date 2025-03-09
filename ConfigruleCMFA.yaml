@@ -29,7 +29,7 @@ proxies:
   udp: true
   
 - name: STREAM
-  server: quiz.staging.vidio.com
+  server: 172.67.5.14
   port: 443
   type: trojan
   password: 47b60744-03dd-4870-aca3-ade5f15efb01
@@ -43,7 +43,7 @@ proxies:
   udp: true
     
 - name: BROWSER 
-  server: quiz.int.vidio.com
+  server: 104.16.17.120
   port: 443
   type: trojan
   password: 47b60744-03dd-4870-aca3-ade5f15efb01
