@@ -4,56 +4,56 @@ proxies:
   server: 104.22.5.240
   port: 443
   type: trojan
-  password: 47b60744-03dd-4870-aca3-ade5f15efb01
+  password: 65a0dc18-7495-4336-82fb-49f3f7207bfe
   skip-cert-verify: true
-  sni: id-warna.rmatstore.biz.id
+  sni: id-biznet.rmatstore.cloud
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-warna.rmatstore.biz.id
+      Host: id-biznet.rmatstore.cloud
   udp: true
 
 - name: SOSMED
   server: 104.22.4.240
   port: 443
   type: trojan
-  password: 47b60744-03dd-4870-aca3-ade5f15efb01
+  password: 65a0dc18-7495-4336-82fb-49f3f7207bfe
   skip-cert-verify: true
-  sni: id-warna.rmatstore.biz.id
+  sni: id-biznet.rmatstore.cloud
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-warna.rmatstore.biz.id
+      Host: id-biznet.rmatstore.cloud
   udp: true
   
 - name: STREAM
   server: 172.67.5.14
   port: 443
   type: trojan
-  password: 47b60744-03dd-4870-aca3-ade5f15efb01
+  password: 65a0dc18-7495-4336-82fb-49f3f7207bfe
   skip-cert-verify: true
-  sni: id-warna.rmatstore.biz.id
+  sni: id-biznet.rmatstore.cloud
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-warna.rmatstore.biz.id
+      Host: id-biznet.rmatstore.cloud
   udp: true
     
 - name: BROWSER 
-  server: 104.26.7.171
+  server: 104.16.16.120
   port: 443
   type: trojan
-  password: 47b60744-03dd-4870-aca3-ade5f15efb01
+  password: 65a0dc18-7495-4336-82fb-49f3f7207bfe
   skip-cert-verify: true
-  sni: id-warna.rmatstore.biz.id
+  sni: id-biznet.rmatstore.cloud
   network: ws
   ws-opts:
     path: /trojan-go
     headers:
-      Host: id-warna.rmatstore.biz.id
+      Host: id-biznet.rmatstore.cloud
   udp: true
     
 proxy-groups:
